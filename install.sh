@@ -15,3 +15,5 @@ ln -sf "$DOTFILES/tmux/tmux.conf" "$HOME/.tmux.conf"
 #git clone https://github.com/tmux-plugins/tpm "$DOTFILES/vendor/tpm"
 
 ln -sf "$DOTFILES/vim/.vimrc" "$HOME"
+
+ln -sf "$DOTFILES/nvim/lua" "$HOME/.config/nvim/lua"
