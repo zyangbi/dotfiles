@@ -13,8 +13,8 @@ filetype on
 filetype plugin on
 filetype indent on
 
-" Add numbers to the file.
-set number
+" Not add numbers to the file.
+set nonumber
 
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
@@ -25,7 +25,7 @@ au FocusGained,BufEnter * checktime
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = "."
+let mapleader = " "
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7

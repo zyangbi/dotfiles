@@ -11,7 +11,6 @@ fi
 ln -sf "$DOTFILES/zsh/.zshrc" "$HOME"
 ln -sf "$DOTFILES/zsh/.p10k.zsh" "$HOME"
 
-
 ln -sf "$DOTFILES/tmux/tmux.conf" "$HOME/.tmux.conf"
 #git clone https://github.com/tmux-plugins/tpm "$DOTFILES/vendor/tpm"
 
