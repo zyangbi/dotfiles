@@ -39,43 +39,6 @@ antigen theme romkatv/powerlevel10k
 # # Tell Antigen that you're done.
 antigen apply
 
-# Homebrew
-export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
-
-# Proxy
-function proxy() {
-	case $1 in
-		start)
-			export http_proxy=http://127.0.0.1:7890
-			export HTTP_PROXY=$http_proxy
-			export https_proxy=$http_proxy
-			export HTTPS_PROXY=$http_proxy
-			export all_proxy=$http_proxy
-			export no_proxy=localhost,192.168.*,127.0.*
-			export NO_PROXY=localhost,192.168.*,127.0.*
-			;;
-		stop)
-			unset http_proxy
-			unset HTTP_PROXY
-			unset https_proxy
-			unset HTTPS_PROXY
-			unset all_proxy
-			unset no_proxy
-			unset NO_PROXY
-			;;
-		status)
-			echo "http_proxy=$http_proxy"
-			echo "HTTP_PROXY=$HTTP_PROXY"
-			echo "https_proxy=$https_proxy"
-			echo "HTTPS_PROXY=$HTTPS_PROXY"
-			echo "all_proxy=$all_proxy"
-			echo "no_proxy=$no_proxy"
-			echo "NO_PROXY=$NO_PROXY"
-			;;
-	esac
-}
-proxy start
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

@@ -12,6 +12,7 @@ fi
 # zsh
 ln -sf "$DOTFILES/zsh/.zshrc" "$HOME"
 ln -sf "$DOTFILES/zsh/.p10k.zsh" "$HOME"
+chsh -s $(which zsh)
 
 # tmux
 ln -sf "$DOTFILES/tmux/tmux.conf" "$HOME/.tmux.conf"
