@@ -1,4 +1,4 @@
-DOTFILES=$HOME/code/dotfiles
+DOTFILES=$HOME/dotfiles
 
 # antigen
 if [ ! -d $HOME/.antigen ]; then
