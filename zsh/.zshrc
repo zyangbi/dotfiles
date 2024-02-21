@@ -41,3 +41,6 @@ antigen theme romkatv/powerlevel10k
 #
 # # Tell Antigen that you're done.
 antigen apply
+
+alias l='ls -lh'
+alias ll='ls -lah'
