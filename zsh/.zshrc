@@ -44,3 +44,6 @@ antigen apply
 
 alias l='ls -lh'
 alias ll='ls -lah'
+
+export PATH="$PATH:$HOME/.local/bin"
+
